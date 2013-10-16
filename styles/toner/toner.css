@@ -1,0 +1,40 @@
+/* 
+	This is in gmaps-css format.
+	Check out: http://github.com/madeincluj/gmaps-css
+*/
+
+all {
+	saturation: -100;
+}
+
+all:geometry.fill {
+	color: #fff;
+}
+
+road.highway:geometry {
+	color: #000;
+}
+
+road.highway:labels.text {
+	color: #fff;
+}
+
+road.highway:labels.text.stroke {
+	visibility: off;
+}
+
+road.highway:geometry.stroke {
+	visibility: off;
+}
+
+water {
+	color: #000;
+}
+
+:labels.icon {
+	visibility: off;
+}
+
+poi {
+	visibility: off;
+}

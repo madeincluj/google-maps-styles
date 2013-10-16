@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title>Google Maps Custom Styles Tester</title>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="styles/toner/toner.js" type='text/javascript'></script>
+	<script type='text/javascript'>
+
+		google.maps.event.addDomListener(window, 'load', function() {
+			var options = {
+				zoom: 8,
+				center: new google.maps.LatLng(45.8667, 25.3),
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				styles: GMAPS_STYLES
+			};
+
+			window.map = new google.maps.Map(document.getElementById('map'), options);
+		});
+
+	</script>
+</head>
+<body>
+
+	<div id='map' style='position:absolute;top:0;bottom:0;left:0;right:0'></div>
+
+</body>
+</html>
